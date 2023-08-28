@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="170dp">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <ImageView
+        android:id="@+id/gamesImage"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:src="@drawable/img_3"
+        android:layout_marginStart="10dp"
+        android:background="@drawable/frame"
+        />
+
+    <TextView
+        android:id="@+id/gamesTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Title: Puerto Rico"
+        android:textSize="25sp"
+        app:layout_constraintStart_toEndOf="@id/gamesImage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginStart="10dp"
+        android:gravity="left"
+        android:layout_marginBottom="20dp"
+        />
+
+    <TextView
+        android:id="@+id/gamesId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Id: 584635"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@id/gamesImage"
+        app:layout_constraintTop_toBottomOf="@+id/gamesTitle"
+        android:layout_marginStart="10dp"/>
+
+    <TextView
+        android:id="@+id/gamesYear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Year: 2008"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@id/gamesId"
+        app:layout_constraintTop_toTopOf="@id/gamesId"
+        app:layout_constraintBottom_toBottomOf="@+id/gamesId"
+        android:layout_marginStart="10dp"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
